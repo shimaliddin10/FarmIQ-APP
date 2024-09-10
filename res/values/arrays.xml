@@ -1,0 +1,10 @@
+<resources>
+    <string-array name="product_types_array">
+        <item>Select Product Type</item>
+        <item>Seeds</item>
+        <item>Crops</item>
+        <item>Fruits</item>
+        <item>Vegetables</item>
+        <item>Organic</item>
+    </string-array>
+</resources>

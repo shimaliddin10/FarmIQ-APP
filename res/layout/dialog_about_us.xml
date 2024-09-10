@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_about_us_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We at FarmIQ aim to revolutionize the Farming practices.\n\nMeet the Co-Founders of FarmIQ:\n\n* Mohammed Shimal Iddin - 4PA21AI020\n\n* Mohammed Thasleem - 4PA21AI022\n\n* Ahmed Suhail - 4PA21AI006\n\n* Mohammed Suhail - 4PA21AI025"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

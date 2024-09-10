@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <!-- Scrollable User Info Section -->
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_developer_info"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- User Profile -->
+            <ImageView
+                android:id="@+id/iv_user_profile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/default_user_profile"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:elevation="4dp" />
+
+            <!-- User Information -->
+            <TextView
+                android:id="@+id/tv_full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name: Rajesh Shetty"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tv_date_of_birth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth: 15/08/1985"
+                android:textSize="20sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tv_mobile_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number: +91 9876543210"
+                android:textSize="20sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: rajesh.shetty@example.com"
+                android:textSize="20sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address: 123, MG Road, Mangaluru, Karnataka, India"
+                android:textSize="20sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Help Message -->
+            <TextView
+                android:id="@+id/tv_help_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If you want more information or help in increasing your farm yield or suggestions, you can visit our website. https://www.example.com"
+                android:textSize="18sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="16dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Developer Information -->
+    <TextView
+        android:id="@+id/tv_developer_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by S.S.Gang"
+        android:textSize="14sp"
+        android:textColor="@color/dark_green"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp" />
+
+</RelativeLayout>

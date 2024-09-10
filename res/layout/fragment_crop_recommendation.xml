@@ -1,0 +1,66 @@
+<!-- res/layout/fragment_crop_recommendation.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Title: Crop Recommendation -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crop Recommendation"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Subtitle: Grow smartly with FarmIQ -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grow smartly with FarmIQ"
+        android:textSize="16sp"
+        android:textColor="@color/dark_green"
+        android:layout_marginBottom="16dp" />
+
+    <!-- State Selector: Switch for different states -->
+    <Switch
+        android:id="@+id/switchState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Karnataka"
+        android:checked="true"
+        android:textColor="@android:color/black"
+        android:thumbTint="@color/black"
+        android:trackTint="@color/lightGray"
+        android:layout_marginBottom="16dp" />
+
+    <!-- District Selector: Spinner for districts -->
+    <Spinner
+        android:id="@+id/spinnerDistrict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_spinner"
+        android:spinnerMode="dropdown"
+        android:popupBackground="@android:color/white"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp" />
+
+    <!-- RecyclerView for displaying crop recommendations -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCropRecommendations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+    <TextView
+        android:id="@+id/textViewRecommendations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="crop_recommendations"
+        android:textColor="@color/dark_green"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        android:tint="@color/white"/>
+    <item
+        android:id="@+id/navigation_camera"
+        android:icon="@android:drawable/ic_menu_mapmode"
+        android:title="Weather"
+        android:tint="@color/white"/>
+    <item
+        android:id="@+id/navigation_store"
+        android:icon="@drawable/ic_store"
+        android:title="Store"
+        android:tint="@color/white"/>
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings"
+        android:tint="@color/white"/>
+</menu>

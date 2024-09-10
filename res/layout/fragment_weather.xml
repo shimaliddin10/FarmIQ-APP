@@ -1,0 +1,56 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Month"
+            android:textSize="24sp"
+            android:padding="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewWeather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            tools:listitem="@layout/item_weather" />
+
+        <TextView
+            android:id="@+id/textViewMapName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map Name"
+            android:textSize="18sp"
+            android:padding="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerMapSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp" />
+
+        <WebView
+            android:id="@+id/webViewWeatherMap"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="16dp" />
+
+        <TextView
+            android:id="@+id/textViewMapLegend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map Legend"
+            android:textSize="14sp"
+            android:padding="16dp" />
+
+    </LinearLayout>
+</ScrollView>
